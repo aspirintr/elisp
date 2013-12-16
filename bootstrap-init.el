@@ -4,7 +4,7 @@
 (defun bootstrap-file (domain machine file-name)
   "Returns the path to FILE-NAME for MACHINE in DOMAIN. The
 variable *my-emacs-lib-dir* must be defined."
-  (concat *my-emacs-lib-dir* "bootstrap/" domain "/" machine "/" file-name))
+  (concat *my-emacs-lib-dir* domain "/" machine "/" file-name))
 
 (defun load-init-if-exists (domain machine file)
   "Loads FILE for MACHINE in DOMAIN, if it exists.
@@ -26,4 +26,6 @@ is newer than the .el file."
   (load-library "emacs")
   (load-init-if-exists domain machine "after")
 ;;;  (setq bookmark-default-file
-;;;	(bootstrap-file domain machine "emacs.bmk")))
+;;;	(bootstrap-file domain machine "emacs.bmk"))
+	)
+
