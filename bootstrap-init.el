@@ -25,5 +25,5 @@ is newer than the .el file."
   (load-init-if-exists domain machine "before")
   (load-library "emacs")
   (load-init-if-exists domain machine "after")
-  (setq bookmark-default-file
-	(bootstrap-file domain machine "emacs.bmk")))
+;;;  (setq bookmark-default-file
+;;;	(bootstrap-file domain machine "emacs.bmk")))
