@@ -15,3 +15,9 @@
 
 ;;; C-x b autocomplete buffer name
 (iswitchb-mode 1)
+
+;;; Easy travel between windows
+(global-set-key [s-left] 'windmove-left)          ; move to left windnow
+(global-set-key [s-right] 'windmove-right)        ; move to right window
+(global-set-key [s-up] 'windmove-up)              ; move to upper window
+(global-set-key [s-down] 'windmove-down)          ; move to downer window
