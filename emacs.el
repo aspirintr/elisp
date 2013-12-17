@@ -16,8 +16,14 @@
 ;;; C-x b autocomplete buffer name
 (iswitchb-mode 1)
 
+;;; WINDOW CONTROLS
 ;;; Easy travel between windows
 (global-set-key [s-left] 'windmove-left)          ; move to left windnow
 (global-set-key [s-right] 'windmove-right)        ; move to right window
 (global-set-key [s-up] 'windmove-up)              ; move to upper window
 (global-set-key [s-down] 'windmove-down)          ; move to downer window
+;;; Window enlargement/shinkage
+(global-set-key (kbd "s-C-<left>") 'shrink-window-horizontally)
+(global-set-key (kbd "s-C-<right>") 'enlarge-window-horizontally)
+(global-set-key (kbd "s-C-<down>") 'shrink-window)
+(global-set-key (kbd "s-C-<up>") 'enlarge-window)
