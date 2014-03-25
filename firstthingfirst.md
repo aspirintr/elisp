@@ -39,4 +39,9 @@ $ tar xjf auto-complete-1.3.1.tar.bz2
 (ac-config-default)
 ```
   * Copy and paste the lines above into ~/Desktop/elisp/machines/[your machine ie tantuni]/before.el
+    * You can add the following 2 lines for enabling quick help pop up menu for autocomplete into .../before.el file:
+```elisp
+(setq ac-use-quick-help t)
+(setq ac-quick-help-delay 2)
+```
 
