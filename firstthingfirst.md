@@ -38,5 +38,5 @@ $ tar xjf auto-complete-1.3.1.tar.bz2
 (add-to-list 'ac-dictionary-directories "~/.emacs.d//ac-dict")
 (ac-config-default)
 ```
-  * Copy and paste the lines above into ~/Desktop/elisp/emacs.el
+  * Copy and paste the lines above into ~/Desktop/elisp/machines/[your machine ie tantuni]/before.el
 
