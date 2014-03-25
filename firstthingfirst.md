@@ -19,3 +19,9 @@ And add the installation lib folder to before.el
 ;;; Color-theme install directory in this machine
 (defvar *my-color-theme-install-dir* "/usr/share/emacs23/site-lisp/emacs-goodies-el/")
 ```
+* Install auto complete tool
+```bash
+$ wget http://cx4a.org/pub/auto-complete/auto-complete-1.3.1.tar.bz2
+$ tar xjf auto-complete-1.3.1.tar.bz2
+```
+
