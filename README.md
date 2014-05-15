@@ -6,11 +6,15 @@ The idea is simple.
 * Have seperate `dot_emacs.el` file for each machine you are using and link to your `~/.emacs.el` init file to `machine_name/dot_emacs.el` file after a clean installation of emacs,
 * By this way, first `before.el` file, then `emacs.el` file (which is in this folder not in ~/ folder.) and then `after.el` file will be loaded.
 
+Linux
 First, link your `~/.emacs` file to `here/machinename/dot_emacs.el` file:
 
 ```bash
 $ ln -s ~/Desktop/elisp/machines/tantuni/dot_emacs.el ~/.emacs
 ```
+Windows
+Just copy `here/machinename/dot_emacs.el` file to ~/.emacs.el:
+`here/machinename/dot_emacs.el` ---> C:\Users\kkk\AppData\Roaming\.emacs.el
 
 Here the file `~/Desktop/elisp/machines/tantuni/dot_emacs.el` contains something like:
 

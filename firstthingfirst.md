@@ -8,6 +8,8 @@ $ svn co https://github.com/aspirintr/elisp/trunk ~/Desktop/elisp
 ```
 
 * Read readme.md file
+
+Linux
 * Install color theme (help http://www.nongnu.org/color-theme/#sec4)
 ```bash
 $ sudo apt-get install emacs-goodies-el
@@ -17,6 +19,15 @@ $ sudo apt-get install emacs-goodies-el
 ;;; Color-theme install directory in this machine
 (defvar *my-color-theme-install-dir* "/usr/share/emacs23/site-lisp/emacs-goodies-el/")
 ```
+
+Windows
+* Just unzip color theme and load path to it in before.el:
+```elisp
+;;; Color-theme install directory in this machine
+(defvar *my-color-theme-install-dir* "C:/Users/kkk/Desktop/emacs/color-theme-6.6.0/")
+```
+
+Both for Windows and Linux
 * Install auto complete tool. I have followed this video https://www.youtube.com/watch?v=rGVVnDxwJYE
   * You can find the latest version here http://cx4a.org/software/auto-complete/
   * in bash or emacs eshell,
@@ -38,8 +49,8 @@ $ tar xjf auto-complete-1.3.1.tar.bz2
 (add-to-list 'ac-dictionary-directories "~/.emacs.d//ac-dict")
 (ac-config-default)
 ```
-  * Copy and paste the lines above into ~/Desktop/elisp/machines/[your machine ie tantuni]/before.el
-    * You can add the following 2 lines for enabling quick help pop up menu for autocomplete into .../before.el file:
+  * Copy and paste the lines above into ~/Desktop/elisp/machines/[your machine ie tantuni]/after.el
+    * You can add the following 2 lines for enabling quick help pop up menu for autocomplete into .../after.el file:
 ```elisp
 (setq ac-use-quick-help t)
 (setq ac-quick-help-delay 2)
