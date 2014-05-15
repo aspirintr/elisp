@@ -9,7 +9,7 @@ $ svn co https://github.com/aspirintr/elisp/trunk ~/Desktop/elisp
 
 * Read readme.md file
 
-Linux
+###Linux###
 * Install color theme (help http://www.nongnu.org/color-theme/#sec4)
 ```bash
 $ sudo apt-get install emacs-goodies-el
@@ -20,14 +20,14 @@ $ sudo apt-get install emacs-goodies-el
 (defvar *my-color-theme-install-dir* "/usr/share/emacs23/site-lisp/emacs-goodies-el/")
 ```
 
-Windows
+###Windows###
 * Just unzip color theme and load path to it in before.el:
 ```elisp
 ;;; Color-theme install directory in this machine
 (defvar *my-color-theme-install-dir* "C:/Users/kkk/Desktop/emacs/color-theme-6.6.0/")
 ```
 
-Both for Windows and Linux
+###Both for Windows and Linux###
 * Install auto complete tool. I have followed this video https://www.youtube.com/watch?v=rGVVnDxwJYE
   * You can find the latest version here http://cx4a.org/software/auto-complete/
   * in bash or emacs eshell,
