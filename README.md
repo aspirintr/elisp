@@ -14,7 +14,7 @@ $ ln -s ~/Desktop/elisp/machines/tantuni/dot_emacs.el ~/.emacs
 ```
 ###Windows###
 Just copy `here/machinename/dot_emacs.el` file to ~/.emacs.el:
-`here/machinename/dot_emacs.el` ---\> C:\Users\kkk\AppData\Roaming\\.emacs.el
+`here/machinename/dot_emacs.el` ---\> `C:\Users\kkk\AppData\Roaming\\.emacs.el`
 
 Here the file `~/Desktop/elisp/machines/tantuni/dot_emacs.el` contains something like:
 
